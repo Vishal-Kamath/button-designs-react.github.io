@@ -60,6 +60,76 @@
   color: white;
 }
 
+.button3Container {
+  position: relative;
+  background-color: white;
+  transition: all ease-in-out 0.75s;
+  overflow: hidden;
+}
+.button3Container .cover {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65rem;
+  height: 65rem;
+  border-radius: 50%;
+  background-color: rgb(255, 70, 0);
+  transition: all ease-in-out 0.75s;
+}
+.button3Container .body {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 3.5rem;
+  color: white;
+  transition: all ease-in-out 0.75s;
+}
+.button3Container .button3 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 5rem;
+  border: 0;
+  outline: 0;
+  border-radius: 1rem;
+  background-color: rgb(255, 70, 0);
+  color: rgb(255, 70, 0);
+  font-size: 2rem;
+  transition: all ease-in-out 0.75s;
+  overflow: hidden;
+}
+.button3Container .button3 .buttonCover {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65rem;
+  height: 65rem;
+  border-radius: 50%;
+  background-color: white;
+  transition: all ease-in-out 0.75s;
+  z-index: -1;
+}
+
+.button3Container:has(.button3:hover) .cover {
+  width: 0;
+  height: 0;
+}
+.button3Container:has(.button3:hover) .body {
+  color: rgb(255, 70, 0);
+}
+.button3Container:has(.button3:hover) .button3 {
+  color: white;
+}
+.button3Container:has(.button3:hover) .button3 .buttonCover {
+  width: 0;
+  height: 0;
+}
+
 .mainContainer {
   padding: 2rem max(4vw, (100vw - 110rem) / 2);
   display: grid;
@@ -78,7 +148,7 @@
 }
 .mainContainer .container {
   aspect-ratio: 1;
-  border: 0.25rem solid rgb(255, 70, 0);
+  outline: 0.25rem solid rgb(255, 70, 0);
   border-radius: 2rem;
   isolation: isolate;
 }

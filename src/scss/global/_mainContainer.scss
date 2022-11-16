@@ -18,7 +18,7 @@
 
   .container {
     aspect-ratio: 1;
-    border: 0.25rem solid $accent-color;
+    outline: 0.25rem solid $accent-color;
     border-radius: 2rem;
 
     isolation: isolate;

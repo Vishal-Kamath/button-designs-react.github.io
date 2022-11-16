@@ -26,7 +26,7 @@ class Button2Container extends Component {
   render() { 
     return (
       <div className={`container ${this.state.ContainerClass}`}>
-        <div className="body">Button 1</div>
+        <div className="body">Button 2</div>
         <Button2 
           buttonValue={this.state.buttonValue}
           buttonClass={this.state.buttonClass}
