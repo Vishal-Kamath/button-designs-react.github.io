@@ -1,0 +1,23 @@
+@use '../utilities/variables' as *;
+
+
+.mainContainer {
+  padding: 2rem max(4vw, calc((100vw - 110rem) / 2));
+
+  display: grid;
+  grid-template-columns: 1fr 5rem 1fr 5rem 1fr;
+
+  @include tablet {
+    grid-template-columns: 1fr 5rem 1fr ;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr ;
+  }
+
+  .container {
+    aspect-ratio: 1;
+    border: 0.25rem solid $accent-color;
+    border-radius: 2rem;
+  }
+}
