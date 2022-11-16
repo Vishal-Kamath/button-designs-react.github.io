@@ -23,14 +23,52 @@
   color: white;
 }
 
+.button2Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgb(255, 70, 0);
+  transition: all ease-in-out 0.75s;
+}
+.button2Container .body {
+  font-size: 3.5rem;
+  color: white;
+  transition: all ease-in-out 0.75s;
+}
+.button2Container .button2 {
+  width: 20rem;
+  height: 5rem;
+  border: 0;
+  outline: 0;
+  border-radius: 1rem;
+  background-color: white;
+  color: rgb(255, 70, 0);
+  font-size: 2rem;
+  transition: all ease-in-out 0.75s;
+}
+
+.clicked {
+  background-color: white;
+}
+.clicked .body {
+  color: rgb(255, 70, 0);
+}
+.clicked .button2 {
+  background-color: rgb(255, 70, 0);
+  color: white;
+}
+
 .mainContainer {
   padding: 2rem max(4vw, (100vw - 110rem) / 2);
   display: grid;
-  grid-template-columns: 1fr 5rem 1fr 5rem 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
 }
 @media (max-width: 1000px) {
   .mainContainer {
-    grid-template-columns: 1fr 5rem 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 650px) {
@@ -42,6 +80,7 @@
   aspect-ratio: 1;
   border: 0.25rem solid rgb(255, 70, 0);
   border-radius: 2rem;
+  isolation: isolate;
 }
 
 * {

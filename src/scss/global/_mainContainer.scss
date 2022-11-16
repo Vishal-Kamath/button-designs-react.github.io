@@ -5,10 +5,11 @@
   padding: 2rem max(4vw, calc((100vw - 110rem) / 2));
 
   display: grid;
-  grid-template-columns: 1fr 5rem 1fr 5rem 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
 
   @include tablet {
-    grid-template-columns: 1fr 5rem 1fr ;
+    grid-template-columns: 1fr 1fr ;
   }
 
   @include mobile {
@@ -19,5 +20,7 @@
     aspect-ratio: 1;
     border: 0.25rem solid $accent-color;
     border-radius: 2rem;
+
+    isolation: isolate;
   }
 }
