@@ -3,8 +3,7 @@ import React from 'react';
 const Button3 = (props) => {
   const {
     buttonValue,
-    buttonClass,
-    buttonFunction
+    buttonClass
   } = props
   return ( 
     <button 
